@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exempel 8</title>
+</head>
+<body>
+    <h1>JS - Exempel 8</h1>
+    <h2>Selektioner (if-else)</h2>
+
+    <h3 id="result">Resultat: </h3>
+
+    <script>
+
+        let score = prompt("Ange poäng");
+
+        if(score >= 50){
+            congratulate();
+        }else{
+            encourge();
+        }
+
+        function congratulate(){
+            let message = "Du har fått G";
+            console.log(message);
+            alert(message);
+            document.getElementById('result').innerHTML += message;
+        }
+
+        function encourge(){
+            let message = "Du har fått IG.<br>Lycka till nästa gång.";
+            console.log(message);
+            alert(message); // OBS! alert kan inte tolka HTML-kod
+            document.getElementById('result').innerHTML += message;
+        }
+
+    </script>
+
+</body>
+</html>

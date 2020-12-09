@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exempel 7</title>
+</head>
+<body>
+    <h1>JS Exempel 7</h1>
+    <h2>Funktioner i JavaScript</h2>
+
+    <script>
+
+        // En parameterlös funktion
+        function hello(){
+            console.log("Hello World!");
+        }
+
+        hello();
+
+        // En funktion med en parameter
+        function print(message){
+            console.log(message);
+        }
+
+        print("Hello World!");
+        print(); // undefined
+
+        // Defalut Parameter
+        function echo(message = "Hello"){
+            console.log(message);
+        }
+        echo();  // Hello (istället för undefined)
+
+
+        // En funktion med två parametrar
+        function add(num1 , num2){
+            console.log(num1 + num2);
+        }
+
+        add(11 , 12);
+
+
+        // En funktion med godtycklingt antal parametrar
+        function test(...param){
+            console.log(param);
+        }
+        test(1);
+        test(1, "Text" );
+        test(1, "Text" , 2.5);
+
+
+        // En funktion med returvärde
+        function fullName(firstName, lastName){
+            return firstName + " " + lastName;
+        }
+        
+        let name = fullName("Mahmud" , "Al Hakim");
+        console.log(name);
+
+
+    </script>
+</body>
+</html>

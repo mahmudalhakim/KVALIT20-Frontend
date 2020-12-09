@@ -34,21 +34,30 @@
         let num2 = prompt("Ange tal 2");  // 12
         
         console.log(num1 + num2);   // 1112
-        // Konkatenering
-        // Prompt returnerar alltid en sträng
+        // Detta är en konkatenering
+        // Prompt returnerar alltid en sträng!
 
-        // Vi måste konvertera till tal
+        // Vi måste konvertera strängar till tal
         console.log(Number(num1) + Number(num2));
         
-        /*
+        
         let resultElement = document.getElementById('result');
         resultElement.innerHTML = Number(num1) + Number(num2);
+        
+        // Eller konvertera genom att använda + (unary operator)
+        // istället för number()
+        resultElement.innerHTML = +num1 + +num2;
+
+
+        // Genväg (bör undvikas)
+        // result.innerHTML = num1 + num2;
+        /*
+        Browsers dump references to all elements with ids into the global namespace, using the id as the variable name.
+        I strongly recommend not relying on it and using 
+        document.getElementById (or similar) instead. 
+        The global namespace is really crowded and there are lots of other things there which can conflict.
+        https://stackoverflow.com/questions/25931810/why-is-document-getelementbyid-not-needed
         */
-
-        // result.innerHTML = Number(num1) + Number(num2);
-
-        // Genväg
-        result.innerHTML = +num1 + +num2;
 
     </script>
 </body>
