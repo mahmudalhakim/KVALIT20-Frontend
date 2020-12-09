@@ -1,6 +1,7 @@
- /**
-  * Objektet String
-  */
+/*******************************************************
+*       Objektet String
+*******************************************************/
+
  let myName = "Mahmud Al Hakim        ";
  console.log(myName);
  console.log("Längd före trim: " + myName.length);
