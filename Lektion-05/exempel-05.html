@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exempel 5</title>
+</head>
+<body>
+    <h1>JS - Exempel 5</h1>
+    <h2>Att arbeta med objektet document</h2>
+    <h3>Metoden getElementById</h3>
+
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3">Lite text i HTML</div>
+    <div id="demo4">Mer text i HTML</div>
+
+
+    <script>
+        
+       let divElement1 = document.getElementById('demo1');
+
+       console.log(divElement1);
+
+       // Lägga till HTML via JavaScript
+       divElement1.innerHTML = "<h1>Rubrik från JavaScript</h1>";
+
+
+       // Lägga till text via JavaScript (ej HTML)
+       let divElement2 = document.getElementById('demo2');    
+       divElement2.textContent = "<h2>Underrubrik med JavaScript</h2>";
+
+       // Ändra innehåll med JavaScript
+       let divElement3 = document.getElementById('demo3')
+       divElement3.innerHTML = "Nytt innehåll från JavaScript"
+
+        // Ta bort innehåll med JavaScript
+        let divElement4 = document.getElementById('demo4')
+        divElement4.innerHTML = ""
+
+        // Ändra CSS med JavaScript
+        divElement1.style.color = "#FF00FF"
+
+        
+    </script>
+</body>
+</html>
