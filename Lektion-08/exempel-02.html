@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempel 2</title>
+
+    <style>
+        .cool{
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border: 5px solid mediumaquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exempel 2</h1>
+    <h2>DOM</h2>
+    <h3>Metoden getElementsByTagName()</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quasi nulla vitae nisi totam in sit, officiis cum tempora libero eum? Blanditiis sequi voluptas dicta eaque esse et itaque incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quasi nulla vitae nisi totam in sit, officiis cum tempora libero eum? Blanditiis sequi voluptas dicta eaque esse et itaque incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quasi nulla vitae nisi totam in sit, officiis cum tempora libero eum? Blanditiis sequi voluptas dicta eaque esse et itaque incidunt?</p>
+
+    <script>
+
+        let allParagraphs = document.getElementsByTagName('p');
+        console.log(allParagraphs);
+
+        for (let i = 0; i < allParagraphs.length; i++) {
+            console.log(allParagraphs[i]);
+            allParagraphs[i].className = 'cool';
+        }
+
+    
+    </script>
+</body>
+</html>

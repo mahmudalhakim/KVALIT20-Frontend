@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempel 1</title>
+</head>
+<body>
+    <h1>Exempel 1</h1>
+    <h2>DOM</h2>
+    <h3>Metoden getElementById()</h3>
+    <div id="demo"></div>
+
+    <script>
+        let demo = document.getElementById('demo')
+        // demo blir en referens till elementet
+        console.log(demo);
+
+        // Ändra innehåll
+        demo.innerHTML = "<b>Exempel på DOM-metoden getElementById()</b>";
+
+        // Ändra CSS
+        demo.style.backgroundColor = 'maroon';
+        demo.style.color = '#FFFFFF';
+        demo.style.padding = '10px';
+        demo.style.fontSize = '20px';
+        demo.style.textTransform = 'uppercase';
+        // Dölj innehåll med CSS
+        demo.style.display = 'none';
+
+
+        // Egenskapen body i DOM
+        console.log(document.body);
+        document.body.style.backgroundColor = '#ffff00';
+
+    
+    </script>
+</body>
+</html>

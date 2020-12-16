@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempel 2</title>
+
+    <style>
+
+       #one{
+        font-size: 3em;
+        color: mediumpurple;
+       }
+
+       .cool{
+           background-color: black;
+           color:white;
+           padding: 10px;
+           border:5px solid darkcyan;
+       }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 id="one">Exempel 3</h1>
+
+    <h1>Rubrik 1 igen</h1>
+    <h2>DOM</h2>
+
+    <h3>Metoderna querySelector() och querySelectorAll() </h3>
+    <p class="cool">Stycke 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quasi nulla vitae nisi totam in sit, officiis cum tempora libero eum? Blanditiis sequi voluptas dicta eaque esse et itaque incidunt?</p>
+    <p>Stycke 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quasi nulla vitae nisi totam in sit, officiis cum tempora libero eum? Blanditiis sequi voluptas dicta eaque esse et itaque incidunt?</p>
+    <p class="cool">Stycke 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quasi nulla vitae nisi totam in sit, officiis cum tempora libero eum? Blanditiis sequi voluptas dicta eaque esse et itaque incidunt?</p>
+
+    <script>
+
+        // Hitta HTML-element med hjälp av en CSS-selektor
+        let rubrik1 = document.querySelector('#one');
+        console.log(rubrik1);
+
+        // Hitta flera HTML-element med hjälp av en CSS-selektor
+        let paragraphs = document.querySelectorAll('.cool');
+        console.log(paragraphs);
+
+    </script>
+</body>
+</html>
